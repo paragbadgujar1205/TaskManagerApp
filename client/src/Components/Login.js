@@ -9,6 +9,7 @@ const Login = () => {
     try {
       const res = await axios.post("http://localhost:5000/login", { email, password });
       console.log("Logged in:", res.data);
+      document.writeln("login succesful");
     } catch (error) {
       console.error("Login failed");
     }
